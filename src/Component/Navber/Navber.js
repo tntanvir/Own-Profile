@@ -7,7 +7,6 @@ const Navber = () => {
         { name: 'HOME', link: "#home" },
         { name: 'ABOUT', link: "#about" },
         { name: 'SKILLS', link: "#skills" },
-        { name: 'HIRE ME', link: "#hireme" },
         { name: 'PROJECT', link: "#project" },
         { name: 'CONTACT', link: "#contact" },
     ]
@@ -41,7 +40,7 @@ const Navber = () => {
                         {
                             menuLink.map((menu, i) =>
                             (
-                                <li key={i} className='px-6 hover:text-cyan-600' >
+                                <li key={i} onClick={() => setOpen(!open)} className='px-6 hover:text-cyan-600' >
                                     <a href={menu.link}>{menu.name}</a>
                                 </li>
                             )

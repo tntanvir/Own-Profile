@@ -18,7 +18,7 @@ const About = () => {
                         <div className='text-gray-300 my-3 '>
 
                             <p className='md:text-justify leading-7 text-justify'>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia iusto dolor placeat tempore explicabo ratione atque doloribus ea nostrum enim sed, quidem exercitationem consequuntur labore officiis sequi totam cupiditate numquam?
+                                Hey there! I'm Tanvir, an enthusiastic and versatile full-stack web developer. My passion for innovation and technology drives me to create functional and relevant web solutions.I'm skilled on both the front-end and back-end fronts. I take concepts and ideas and transform them into stable, user-centered web applications.
                             </p>
 
                             <div className='flex mt-10 items-center gap-7'>

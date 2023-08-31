@@ -3,9 +3,9 @@ import hero from '../../imges/IMG_0408_032931 (1).jpg'
 import { FaFacebook, FaInstagram, FaGithub } from 'react-icons/fa'
 const Hero = () => {
     const socalIcon = [
-        { icon: <FaFacebook /> },
-        { icon: <FaInstagram /> },
-        { icon: <FaGithub /> },
+        { icon: <FaFacebook />, link: 'https://www.facebook.com/tanvir.rahman.2382018' },
+        { icon: <FaInstagram />, link: 'https://www.instagram.com/_tanvir_rahaman_' },
+        { icon: <FaGithub />, link: 'https://www.github.com/tntanvir' },
     ]
     return (
         <section id='home' className='min-h-screen flex py-10 md:flex-row flex-col items-center'>
@@ -26,12 +26,16 @@ const Hero = () => {
                     <h4 className='md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600'>
                         Fullstack Developer
                     </h4>
-                    <button className='btn-primary md:mx-0 mt-8'>Contact Me</button>
+                    <button className='btn-primary md:mx-0 mt-8'>
+                        <a href="#contact">Contact Me</a>
+                    </button>
                     <div className='mt-8 text-3xl flex items-center md:justify-start justify-center gap-5'>
                         {socalIcon?.map((item, i) => (
                             <div key={i} className='text-gray-600 hover:text-white cursor-pointer animate-bounce '>
+                                <a href={item.link} target='_blank' rel="noreferrer">
 
-                                {item.icon}
+                                    {item.icon}
+                                </a>
                             </div>))}
 
                     </div>

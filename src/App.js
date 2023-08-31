@@ -3,7 +3,7 @@ import './App.css';
 
 import About from './Component/About/About';
 import Navber from './Component/Navber/Navber'
-// import Bot from './Component/Bot/Bot';
+import Contect from './Component/Contect/Contect';
 import Hero from './Component/Hero/Hero';
 import Skille from './Component/Skille/Skille';
 import Hireme from './Component/Hireme/Hireme';
@@ -13,12 +13,12 @@ function App() {
   return (
     <>
       <Navber></Navber>
-      {/* <Bot></Bot> */}
       <Hero></Hero>
       <About></About>
       <Skille></Skille>
       <Hireme></Hireme>
       <Project></Project>
+      <Contect></Contect>
       <Footer></Footer>
 
     </>
